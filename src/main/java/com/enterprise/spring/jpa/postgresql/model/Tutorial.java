@@ -1,4 +1,4 @@
-package com.bezkoder.spring.jpa.postgresql.model;
+package com.enterprise.spring.jpa.postgresql.model;
 
 import javax.persistence.*;
 

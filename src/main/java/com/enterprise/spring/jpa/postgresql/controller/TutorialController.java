@@ -1,7 +1,7 @@
-package com.bezkoder.spring.jpa.postgresql.controller;
+package com.enterprise.spring.jpa.postgresql.controller;
 
-import com.bezkoder.spring.jpa.postgresql.model.Tutorial;
-import com.bezkoder.spring.jpa.postgresql.repository.TutorialRepository;
+import com.enterprise.spring.jpa.postgresql.model.Tutorial;
+import com.enterprise.spring.jpa.postgresql.repository.TutorialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;

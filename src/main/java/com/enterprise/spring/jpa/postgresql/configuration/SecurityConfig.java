@@ -1,4 +1,4 @@
-package com.bezkoder.spring.jpa.postgresql.configuration;
+package com.enterprise.spring.jpa.postgresql.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
