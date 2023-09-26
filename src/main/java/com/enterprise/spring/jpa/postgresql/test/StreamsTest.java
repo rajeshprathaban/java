@@ -1,5 +1,6 @@
 package com.enterprise.spring.jpa.postgresql.test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -85,5 +86,41 @@ public class StreamsTest {
         for (Integer i : sortedList){
             System.out.println(i);
         }
+
+        System.out.println("***********************");
+        Person person = new Person();
+        person.setName("Rajesh");
+        person.setName(null);
+        Person person1 = new Person();
+        person1.setName("John");
+
+        List<Person> people = new ArrayList<Person>();
+        people.add(person);
+        people.add(person1);
+
+        List<String> names = people.stream()
+                .map(Person::getName)
+                .collect(Collectors.toList());
+
+        for (String name : names){
+            System.out.println(name);
+        }
+
+        System.out.println("***********************");
+
+        Optional<String> maybeName = Optional.ofNullable(person.getName());
+        String name = maybeName.orElse("Unknown");
+
+        System.out.println(name);
+
+        System.out.println("***********************");
+
+        String namess = "baeldung";
+        String newName = namess.replace("dung", "----");
+
+        System.out.println(newName);
+
+        System.out.println("***********************");
+
     }
 }
